@@ -101,14 +101,14 @@ param_grid = {'C': [0.1, 1, 10, 100],
               'gamma': [0.1, 1, 10, 100, 'auto'],
               'kernel': ['sigmoid', 'rbf']}
 
-# Define SVM model
+# Definiowanie SVM
 model = SVC()
 
-# Perform grid search
+# Fukncja grid_search
 grid_search = GridSearchCV(model, param_grid=param_grid, cv=5)
 grid_search.fit(X_train, y_train)
 
-# Print best parameters and score
+# Wyświetlanie najlepszych parametrów i wyniku
 print("Najlepsze parametry: ", grid_search.best_params_)
 print("Dokładność klasyfikacji:", grid_search.best_score_)
 
