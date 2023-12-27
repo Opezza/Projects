@@ -7,6 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1OFMvqycxae4sLo7aqwQskbvywO-DT960
 
 diabetes dataset: https://github.com/plotly/datasets/blob/master/diabetes.csv
+
+This program uses machine learning methods for classification. 
+Three methods have been applied: SVM (Support Vector Machine), KNN (K-Nearest Neighbors), and decision trees.
 """
 
 import sklearn
